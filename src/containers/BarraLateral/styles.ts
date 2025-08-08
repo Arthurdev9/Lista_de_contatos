@@ -5,3 +5,6 @@ export const Aside = styled.aside`
   height: 100vh;
   background-color: #ccc;
 `
+export const Input = styled.input`
+  padding: 8px;
+`

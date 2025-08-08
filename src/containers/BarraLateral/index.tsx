@@ -1,10 +1,15 @@
-import { Aside } from './style'
+import FiltroCard from '../../components/FiltroCard'
+import * as S from './styles'
+import * as enums from '../../utils/enums/contato'
 
 const BarraLateral = () => {
   return (
-    <Aside>
-      <h1>ola</h1>
-    </Aside>
+    <S.Aside>
+      <S.Input type="text" placeholder="Procurar Contato..." />
+      <FiltroCard status={enums.Status.AMIGOS} />
+      <FiltroCard status={enums.Status.FAMILIA} />
+      <FiltroCard status={enums.Status.TRABALHO} />
+    </S.Aside>
   )
 }
 
