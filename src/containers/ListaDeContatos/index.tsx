@@ -4,11 +4,18 @@ import { RootReducer } from '../../store/store'
 import * as S from './styles'
 
 const ListaDeContatos = () => {
+  const { status } = useSelector((state: RootReducer) => state.filtro)
   const { itens } = useSelector((state: RootReducer) => state.contatos)
+
+  const contatosFiltrados = itens.filter((c) => {
+    const statusFilter = status ? c.status === status : itens
+
+    return statusFilter
+  })
 
   return (
     <S.Contatos>
-      {itens.map((c) => (
+      {contatosFiltrados.map((c) => (
         <li key={c.id}>
           <ContatosAdicionados
             status={c.status}

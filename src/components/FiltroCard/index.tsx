@@ -1,14 +1,22 @@
 import * as S from './styles'
 import * as enums from '../../utils/enums/contato'
+import { useDispatch, useSelector } from 'react-redux'
+import { RootReducer } from '../../store/store'
+import { filtroStatus } from '../../store/reducers/filtro'
 
-export type Props = {
-  status: enums.Status.AMIGOS | enums.Status.FAMILIA | enums.Status.TRABALHO
+type Props = {
+  valor: enums.Status
+  texto?: string
 }
 
-const FiltroCard = ({ status }: Props) => {
+const FiltroCard = ({ valor, texto }: Props) => {
+  const dispatch = useDispatch()
+
   return (
     <S.StatusContainer>
-      <S.Botao>{status}</S.Botao>
+      <S.Botao onClick={() => dispatch(filtroStatus(valor))}>
+        {valor || texto}
+      </S.Botao>
     </S.StatusContainer>
   )
 }
