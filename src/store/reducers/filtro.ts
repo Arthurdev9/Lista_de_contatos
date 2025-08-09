@@ -17,9 +17,12 @@ const filtroSlice = createSlice({
   reducers: {
     filtroStatus: (state, action: PayloadAction<enums.Status | null>) => {
       state.status = action.payload
+    },
+    filtroNome: (state, action: PayloadAction<string>) => {
+      state.nome = action.payload
     }
   }
 })
 
 export default filtroSlice.reducer
-export const { filtroStatus } = filtroSlice.actions
+export const { filtroStatus, filtroNome } = filtroSlice.actions
