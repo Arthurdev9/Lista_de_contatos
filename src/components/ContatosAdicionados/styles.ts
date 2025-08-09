@@ -31,8 +31,14 @@ export const Icons = styled.button`
   cursor: pointer;
   background-color: transparent;
   border: none;
+  margin-right: 8px;
 
   svg {
     font-size: 16px;
   }
+`
+
+export const Form = styled.form`
+  display: flex;
+  flex-direction: column;
 `
