@@ -2,6 +2,7 @@ import { useSelector } from 'react-redux'
 import ContatosAdicionados from '../../components/ContatosAdicionados'
 import { RootReducer } from '../../store/store'
 import * as S from './styles'
+import { FaPlus } from 'react-icons/fa'
 
 const ListaDeContatos = () => {
   const { status, nome } = useSelector((state: RootReducer) => state.filtro)
@@ -17,19 +18,24 @@ const ListaDeContatos = () => {
   })
 
   return (
-    <S.Contatos>
-      {contatosFiltrados.map((c) => (
-        <li key={c.id}>
-          <ContatosAdicionados
-            status={c.status}
-            email={c.email}
-            id={c.id}
-            nome={c.nome}
-            numero={c.numero}
-          />
-        </li>
-      ))}
-    </S.Contatos>
+    <>
+      <S.Contatos>
+        {contatosFiltrados.map((c) => (
+          <li key={c.id}>
+            <ContatosAdicionados
+              status={c.status}
+              email={c.email}
+              id={c.id}
+              nome={c.nome}
+              numero={c.numero}
+            />
+          </li>
+        ))}
+      </S.Contatos>
+      <S.ButtonAdicionar type="button">
+        <FaPlus />
+      </S.ButtonAdicionar>
+    </>
   )
 }
 

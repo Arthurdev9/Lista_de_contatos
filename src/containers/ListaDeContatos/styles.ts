@@ -9,3 +9,18 @@ export const Contatos = styled.div`
   padding: 25px;
   gap: 16px;
 `
+export const ButtonAdicionar = styled.button`
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  cursor: pointer;
+  border: none;
+  background-color: green;
+  padding: 24px;
+  border-radius: 50%;
+
+  svg {
+    font-size: 32px;
+    color: #fff;
+  }
+`
