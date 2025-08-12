@@ -6,12 +6,12 @@ export const Botao = styled.button`
   padding: 5px;
   background-color: transparent;
   color: #fff;
-  width: 80px;
+  width: 100%;
   border: none;
   border-radius: 6px;
   cursor: pointer;
   margin-top: 25px;
-  font-size: 16px;
+  font-size: 18px;
   transition: all ease-in-out 0.5s;
 
   &:hover {
@@ -23,4 +23,11 @@ export const Botao = styled.button`
 export const StatusContainer = styled.div`
   display: flex;
   justify-content: center;
+`
+
+export const Span = styled.span`
+  margin-left: 8px;
+  padding: 1px 8px;
+  border-radius: 6px;
+  background-color: #152236ff;
 `

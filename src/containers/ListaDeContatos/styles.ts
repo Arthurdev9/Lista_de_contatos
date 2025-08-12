@@ -2,12 +2,12 @@ import styled from 'styled-components'
 
 export const Contatos = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: 60vw;
-  height: 400px;
+  grid-template-columns: 400px 400px;
+  height: 100vh;
   margin-left: 120px;
   padding: 25px;
-  gap: 16px;
+  gap: 24px;
+  overflow-y: scroll;
 `
 export const ButtonAdicionar = styled.button`
   position: absolute;
@@ -20,7 +20,7 @@ export const ButtonAdicionar = styled.button`
   border-radius: 50%;
 
   svg {
-    font-size: 32px;
+    font-size: 28px;
     color: #fff;
   }
 `

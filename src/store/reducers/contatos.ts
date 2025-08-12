@@ -28,6 +28,48 @@ const initialState: ContatosState = {
       numero: 81998555288,
       email: 'Rosivânia@gmail.com',
       id: 3
+    },
+    {
+      nome: 'Rosivânia',
+      status: enums.Status.TRABALHO,
+      numero: 81998555288,
+      email: 'Rosivânia@gmail.com',
+      id: 4
+    },
+    {
+      nome: 'Rosivânia',
+      status: enums.Status.TRABALHO,
+      numero: 81998555288,
+      email: 'Rosivânia@gmail.com',
+      id: 5
+    },
+    {
+      nome: 'Rosivânia',
+      status: enums.Status.TRABALHO,
+      numero: 81998555288,
+      email: 'Rosivânia@gmail.com',
+      id: 6
+    },
+    {
+      nome: 'Rosivânia',
+      status: enums.Status.TRABALHO,
+      numero: 81998555288,
+      email: 'Rosivânia@gmail.com',
+      id: 7
+    },
+    {
+      nome: 'Rosivânia',
+      status: enums.Status.TRABALHO,
+      numero: 81998555288,
+      email: 'Rosivânia@gmail.com',
+      id: 8
+    },
+    {
+      nome: 'Rosivânia',
+      status: enums.Status.TRABALHO,
+      numero: 81998555288,
+      email: 'Rosivânia@gmail.com',
+      id: 9
     }
   ]
 }

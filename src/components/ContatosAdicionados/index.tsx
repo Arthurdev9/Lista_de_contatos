@@ -53,7 +53,10 @@ const ContatosAdicionados = ({ id, email, nome, numero, status }: Dados) => {
               value={novoNome}
               onChange={(e) => setNovoNome(e.target.value)}
             />
-            <S.Select onChange={(e) => setNovoStatus(e.target.value as Status)}>
+            <S.Select
+              value={novoStatus}
+              onChange={(e) => setNovoStatus(e.target.value as Status)}
+            >
               <option value={Status.AMIGOS}>Amigos</option>
               <option value={Status.FAMILIA}>Família</option>
               <option value={Status.TRABALHO}>Trabalho</option>
