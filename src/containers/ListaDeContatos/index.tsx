@@ -1,10 +1,12 @@
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import ContatosAdicionados from '../../components/ContatosAdicionados'
 import { RootReducer } from '../../store/store'
 import * as S from './styles'
-import { FaPlus } from 'react-icons/fa'
+import { FaPlus, FaStar, FaRegStar } from 'react-icons/fa'
+import { useNavigate } from 'react-router-dom'
 
 const ListaDeContatos = () => {
+  const navigate = useNavigate()
   const { status, nome } = useSelector((state: RootReducer) => state.filtro)
   const { itens } = useSelector((state: RootReducer) => state.contatos)
 
@@ -32,7 +34,7 @@ const ListaDeContatos = () => {
           </li>
         ))}
       </S.Contatos>
-      <S.ButtonAdicionar type="button">
+      <S.ButtonAdicionar type="button" onClick={() => navigate('/cadastrar')}>
         <FaPlus />
       </S.ButtonAdicionar>
     </>

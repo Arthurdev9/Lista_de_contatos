@@ -1,8 +1,8 @@
 import FiltroCard from '../../components/FiltroCard'
 import * as S from './styles'
 import * as enums from '../../utils/enums/contato'
-import { useDispatch, useSelector } from 'react-redux'
-import { RootReducer } from '../../store/store'
+import { useDispatch } from 'react-redux'
+import { FaGlobe, FaHeart, FaUsers, FaBriefcase } from 'react-icons/fa'
 import React, { useState } from 'react'
 import { filtroNome } from '../../store/reducers/filtro'
 
@@ -24,10 +24,26 @@ const BarraLateral = () => {
         value={nomeInput}
         onChange={handleChange}
       />
-      <FiltroCard valor={null as any} texto="Todos" />
-      <FiltroCard valor={enums.Status.AMIGOS} />
-      <FiltroCard valor={enums.Status.FAMILIA} />
-      <FiltroCard valor={enums.Status.TRABALHO} />
+      <FiltroCard
+        valor={null as any}
+        texto="Todos"
+        icon={<FaGlobe style={{ color: '#fff' }} />}
+      />
+      <FiltroCard
+        valor={enums.Status.FAMILIA}
+        texto="Família"
+        icon={<FaHeart style={{ color: 'red' }} />}
+      />
+      <FiltroCard
+        valor={enums.Status.AMIGOS}
+        texto="Amigos"
+        icon={<FaUsers style={{ color: '#fff' }} />}
+      />
+      <FiltroCard
+        valor={enums.Status.TRABALHO}
+        texto="Trabalho"
+        icon={<FaBriefcase style={{ color: '#8B4513' }} />}
+      />
     </S.Aside>
   )
 }

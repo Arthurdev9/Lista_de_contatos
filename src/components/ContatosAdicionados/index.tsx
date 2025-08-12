@@ -1,13 +1,13 @@
 import { useDispatch } from 'react-redux'
 import Contatos from '../../models/Tarefa'
 import * as S from './styles'
-import { FaTrash, FaEdit } from 'react-icons/fa'
+import { FaTrash, FaEdit, FaStar } from 'react-icons/fa'
 import { LuDownload, LuXCircle } from 'react-icons/lu'
 import { editar, remover } from '../../store/reducers/contatos'
 import { useEffect, useState } from 'react'
 import { Status } from '../../utils/enums/contato'
 
-type Dados = Contatos
+export type Dados = Contatos
 
 const ContatosAdicionados = ({ id, email, nome, numero, status }: Dados) => {
   const dispatch = useDispatch()
@@ -48,22 +48,22 @@ const ContatosAdicionados = ({ id, email, nome, numero, status }: Dados) => {
       {estaEditando ? (
         <>
           <S.Form onSubmit={(e) => e.preventDefault()}>
-            <input
+            <S.Input
               type="text"
               value={novoNome}
               onChange={(e) => setNovoNome(e.target.value)}
             />
-            <select onChange={(e) => setNovoStatus(e.target.value as Status)}>
+            <S.Select onChange={(e) => setNovoStatus(e.target.value as Status)}>
               <option value={Status.AMIGOS}>Amigos</option>
               <option value={Status.FAMILIA}>Família</option>
               <option value={Status.TRABALHO}>Trabalho</option>
-            </select>
-            <input
+            </S.Select>
+            <S.Input
               type="number"
               value={novoNumero}
               onChange={(e) => setNovoNumero(Number(e.target.value))}
             />
-            <input
+            <S.Input
               type="email"
               value={novoEmail}
               onChange={(e) => setNovoEmail(e.target.value)}
@@ -83,10 +83,10 @@ const ContatosAdicionados = ({ id, email, nome, numero, status }: Dados) => {
           <S.Sobre>{numero}</S.Sobre>
           <S.Sobre>{email}</S.Sobre>
           <S.Icons onClick={iniciarEdicao}>
-            <FaEdit />
+            <FaEdit style={{ color: '#627cf1' }} />
           </S.Icons>
           <S.Icons onClick={() => dispatch(remover(id))}>
-            <FaTrash />
+            <FaTrash style={{ color: 'red' }} />
           </S.Icons>
         </>
       )}

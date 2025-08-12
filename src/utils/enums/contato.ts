@@ -1,5 +1,5 @@
 export enum Status {
-  FAMILIA = 'familia',
-  AMIGOS = 'amigos',
-  TRABALHO = 'trabalho'
+  FAMILIA = 'Familia',
+  AMIGOS = 'Amigos',
+  TRABALHO = 'Trabalho'
 }
