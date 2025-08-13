@@ -17,6 +17,10 @@ export const Container = styled.div`
   display: grid;
   grid-template-columns: 226px auto;
   font-family: 'Roboto', sans-serif;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 400px;
+  }
 `
 
 export default EstiloGlobal

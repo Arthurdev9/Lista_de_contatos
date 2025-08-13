@@ -1,8 +1,8 @@
-import { useDispatch, useSelector } from 'react-redux'
+import { useSelector } from 'react-redux'
 import ContatosAdicionados from '../../components/ContatosAdicionados'
 import { RootReducer } from '../../store/store'
 import * as S from './styles'
-import { FaPlus, FaStar, FaRegStar } from 'react-icons/fa'
+import { FaPlus } from 'react-icons/fa'
 import { useNavigate } from 'react-router-dom'
 
 const ListaDeContatos = () => {

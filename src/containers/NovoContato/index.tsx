@@ -3,7 +3,7 @@ import { CadastroContainer } from './styles'
 
 const NovoContato = () => {
   return (
-    <CadastroContainer>
+    <CadastroContainer data-aos="fade-up">
       <AdicionarContatos />
     </CadastroContainer>
   )

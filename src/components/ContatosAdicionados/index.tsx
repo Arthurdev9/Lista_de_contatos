@@ -1,10 +1,10 @@
 import { useDispatch } from 'react-redux'
 import Contatos from '../../models/Tarefa'
 import * as S from './styles'
-import { FaTrash, FaEdit, FaStar } from 'react-icons/fa'
+import { FaTrash, FaEdit } from 'react-icons/fa'
 import { LuDownload, LuXCircle } from 'react-icons/lu'
 import { editar, remover } from '../../store/reducers/contatos'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { Status } from '../../utils/enums/contato'
 
 export type Dados = Contatos

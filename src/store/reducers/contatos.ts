@@ -30,45 +30,45 @@ const initialState: ContatosState = {
       id: 3
     },
     {
-      nome: 'Rosivânia',
-      status: enums.Status.TRABALHO,
-      numero: 81998555288,
-      email: 'Rosivânia@gmail.com',
+      nome: 'Carlos Mendes',
+      status: enums.Status.AMIGOS,
+      numero: 81991112233,
+      email: 'carlos.mendes@example.com',
       id: 4
     },
     {
-      nome: 'Rosivânia',
-      status: enums.Status.TRABALHO,
-      numero: 81998555288,
-      email: 'Rosivânia@gmail.com',
+      nome: 'Fernanda Silva',
+      status: enums.Status.FAMILIA,
+      numero: 81992223344,
+      email: 'fernanda.silva@example.com',
       id: 5
     },
     {
-      nome: 'Rosivânia',
+      nome: 'Paulo Henrique',
       status: enums.Status.TRABALHO,
-      numero: 81998555288,
-      email: 'Rosivânia@gmail.com',
+      numero: 81993334455,
+      email: 'paulo.henrique@example.com',
       id: 6
     },
     {
-      nome: 'Rosivânia',
-      status: enums.Status.TRABALHO,
-      numero: 81998555288,
-      email: 'Rosivânia@gmail.com',
+      nome: 'Mariana Costa',
+      status: enums.Status.AMIGOS,
+      numero: 81994445566,
+      email: 'mariana.costa@example.com',
       id: 7
     },
     {
-      nome: 'Rosivânia',
-      status: enums.Status.TRABALHO,
-      numero: 81998555288,
-      email: 'Rosivânia@gmail.com',
+      nome: 'Ricardo Lopes',
+      status: enums.Status.FAMILIA,
+      numero: 81995556677,
+      email: 'ricardo.lopes@example.com',
       id: 8
     },
     {
-      nome: 'Rosivânia',
+      nome: 'Patrícia Almeida',
       status: enums.Status.TRABALHO,
-      numero: 81998555288,
-      email: 'Rosivânia@gmail.com',
+      numero: 81996667788,
+      email: 'patricia.almeida@example.com',
       id: 9
     }
   ]
